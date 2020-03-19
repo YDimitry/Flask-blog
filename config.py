@@ -5,6 +5,7 @@ class Config:
 
 class DevelopmentConfig(Config):
     """ Development configurations """
+    ENV = 'development'
     DEBUG = True
     SQLALCHEMY_ECHO = True
     EXPLAIN_TEMPLATE_LOADING = True
@@ -18,6 +19,7 @@ class DevelopmentConfig(Config):
 
 class ProductionConfig(Config):
     """ Production configurations """
+    ENV = 'production'
     DEBUG = False
 
 

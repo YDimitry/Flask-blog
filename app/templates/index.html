@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-{% for name, item in conf.items() %}
-    {{ name }}:{{ item }}<br>
+{% extends 'base.html' %}
 
-{% endfor %}
-</body>
-</html>
+{% block title %}
+Index page
+{% endblock %}
+
+{% block content_title %}Index page{% endblock %}
+{% block content %}some content qwert{% endblock %}
